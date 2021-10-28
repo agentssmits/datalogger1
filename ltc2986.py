@@ -5,6 +5,7 @@ from datetime import datetime
 import textwrap
 import math
 import sys
+import os
 
 import serial #install modules serial and pyserial
 
@@ -235,18 +236,21 @@ def logMeasurement(measurString, statusString, raw = [], expName = ""):
 	else:
 		fname = "csv/%s.csv" % (expName)	
 		
+	os.makedirs(os.path.dirname(fname), exist_ok=True)
 	with open(fname, "a") as f:
 		measurString = timestamp.strftime("%Y-%m-%dT%H:%M:%S")+measurString
 		f.write(measurString+"\n")
 		print(measurString)
 		
 	fname = fname.replace("csv","telemetry")
+	os.makedirs(os.path.dirname(fname), exist_ok=True)
 	with open(fname, "a") as f:
 		statusString = timestamp.strftime("%Y-%m-%dT%H:%M:%S\t")+statusString
 		f.write(statusString+"\n")
 		
 	if raw != []:
 		fname = fname.replace("telemetry", "raw")
+		os.makedirs(os.path.dirname(fname), exist_ok=True)
 		with open(fname, "a") as f:
 			string = timestamp.strftime("%Y-%m-%dT%H:%M:%S\t")+str(raw)
 			f.write(string+"\n")
@@ -259,6 +263,7 @@ def logString(string, expName = "", telemetry = False, printAllow = True):
 		fname = "csv/%s.csv" % (expName)	
 	
 	if telemetry == False:
+		os.makedirs(os.path.dirname(fname), exist_ok=True)
 		with open(fname, "a") as f:
 			string = timestamp.strftime("%Y-%m-%dT%H:%M:%S")+string
 			f.write(string+"\n")
@@ -266,6 +271,7 @@ def logString(string, expName = "", telemetry = False, printAllow = True):
 				print(string)
 	else:
 		fname = fname.replace("csv","telemetry")
+		os.makedirs(os.path.dirname(fname), exist_ok=True)
 		with open(fname, "a") as f:
 			string = timestamp.strftime("%Y-%m-%dT%H:%M:%S\t")+string
 			f.write(string+"\n")
