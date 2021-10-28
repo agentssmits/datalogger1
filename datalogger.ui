@@ -1,0 +1,3567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1191</width>
+    <height>936</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::CustomContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">DataLogger</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>favico.png</normaloff>favico.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="toolTipDuration">
+       <number>-6</number>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="currentTab">
+       <attribute name="title">
+        <string>Current</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="5" column="1">
+           <spacer name="verticalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="5">
+           <spacer name="verticalSpacer_13">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="6" column="2">
+           <widget class="QLCDNumber" name="lcdNumber_6"/>
+          </item>
+          <item row="2" column="3">
+           <spacer name="verticalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1">
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="5" column="3">
+           <spacer name="verticalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="5" column="0">
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="6">
+           <widget class="QLCDNumber" name="lcdNumber_11"/>
+          </item>
+          <item row="3" column="1">
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="2" column="0">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="5">
+           <spacer name="verticalSpacer_11">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="2" column="5">
+           <spacer name="verticalSpacer_12">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLCDNumber" name="lcdNumber_3"/>
+          </item>
+          <item row="2" column="2">
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="3">
+           <spacer name="verticalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLCDNumber" name="lcdNumber_4"/>
+          </item>
+          <item row="5" column="5">
+           <spacer name="verticalSpacer_14">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="5" column="4">
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLCDNumber" name="lcdNumber"/>
+          </item>
+          <item row="0" column="6">
+           <widget class="QLCDNumber" name="lcdNumber_10"/>
+          </item>
+          <item row="2" column="4">
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="6" column="6">
+           <widget class="QLCDNumber" name="lcdNumber_12"/>
+          </item>
+          <item row="2" column="1">
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="2" column="6">
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="3">
+           <spacer name="verticalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="6" column="4">
+           <widget class="QLCDNumber" name="lcdNumber_9"/>
+          </item>
+          <item row="6" column="5">
+           <spacer name="verticalSpacer_15">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLCDNumber" name="lcdNumber_5"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>channel 0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="4">
+           <widget class="QLCDNumber" name="lcdNumber_8"/>
+          </item>
+          <item row="6" column="3">
+           <spacer name="verticalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="5" column="6">
+           <spacer name="horizontalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="5" column="2">
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="6" column="1">
+           <spacer name="verticalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="4">
+           <widget class="QLCDNumber" name="lcdNumber_7"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLCDNumber" name="lcdNumber_2"/>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_2">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>channel 1</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="4">
+           <widget class="QLabel" name="label_7">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>channel 6</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QLabel" name="label_3">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>channel 2</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>channel 4</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLabel" name="label_6">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>channel 5</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="6">
+           <widget class="QLabel" name="label_4">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>channel 3</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="6">
+           <widget class="QLabel" name="label_8">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>channel 7</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>channel 8</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="2">
+           <widget class="QLabel" name="label_10">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>channel 9</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="4">
+           <widget class="QLabel" name="label_11">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>channel 10</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="6">
+           <widget class="QLabel" name="label_12">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>channel 11</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="allTab">
+       <attribute name="title">
+        <string>All</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="2" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <spacer name="horizontalSpacer_12">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_13">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <widget class="MplWidget" name="allMplWidget" native="true"/>
+        </item>
+        <item row="1" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <spacer name="horizontalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Minimum</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_11">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Minimum</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="customTab">
+       <attribute name="title">
+        <string>Custom</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <spacer name="horizontalSpacer_15">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="0" column="2">
+             <widget class="QCheckBox" name="checkBox_5">
+              <property name="text">
+               <string>channel 5</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QCheckBox" name="checkBox_6">
+              <property name="text">
+               <string>channel 6</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QCheckBox" name="checkBox_7">
+              <property name="text">
+               <string>channel 7</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QCheckBox" name="checkBox_8">
+              <property name="text">
+               <string>channel 8</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="4">
+             <widget class="QCheckBox" name="checkBox_10">
+              <property name="text">
+               <string>channel 10</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QCheckBox" name="checkBox_9">
+              <property name="text">
+               <string>channel 9</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QCheckBox" name="checkBox_4">
+              <property name="text">
+               <string>channel 4</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QCheckBox" name="checkBox_3">
+              <property name="text">
+               <string>channel 3</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QCheckBox" name="checkBox_2">
+              <property name="text">
+               <string>channel 2</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QCheckBox" name="checkBox">
+              <property name="text">
+               <string>channel 1</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_16">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <widget class="MplWidget" name="customMplWidget" native="true"/>
+        </item>
+        <item row="3" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <spacer name="horizontalSpacer_22">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_23">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Minimum</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_24">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Minimum</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <spacer name="horizontalSpacer_20">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_21">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="settingsTab">
+       <attribute name="title">
+        <string>Settings</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_12">
+        <item row="1" column="0">
+         <spacer name="verticalSpacer_16">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="0">
+         <spacer name="verticalSpacer_17">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_17">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string>General</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>CSV root directory</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="rootSelEdit"/>
+            </item>
+            <item>
+             <widget class="QToolButton" name="rootSelBtn">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_35">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_16">
+              <property name="text">
+               <string>Experiment name</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="expName"/>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_36">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QLabel" name="label_19">
+              <property name="text">
+               <string>Custom tab count</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_18">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="customTabCount">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>5</number>
+              </property>
+              <property name="value">
+               <number>1</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_17">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <layout class="QVBoxLayout" name="dataloggerSettingsLayout">
+          <item>
+           <widget class="QLabel" name="label_20">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string>DataLogger</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <item>
+             <widget class="QLabel" name="label_23">
+              <property name="text">
+               <string>Serial port</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_25">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>79</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="datalogger_port">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>COM3</string>
+              </property>
+              <property name="maxLength">
+               <number>32764</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_26">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>9</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="apply_settings_btn">
+              <property name="text">
+               <string>Apply settings</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="start_sampling_btn">
+              <property name="text">
+               <string>Start sampling</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_37">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetFixedSize</enum>
+            </property>
+            <property name="horizontalSpacing">
+             <number>3</number>
+            </property>
+            <property name="verticalSpacing">
+             <number>10</number>
+            </property>
+            <item row="2" column="11">
+             <widget class="QLineEdit" name="CH3_status">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="11">
+             <widget class="QLineEdit" name="CH4_status">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="10">
+             <widget class="QLineEdit" name="CH7_val">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="9">
+             <spacer name="horizontalSpacer_28">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="3">
+             <widget class="QComboBox" name="mode_sel_CH2">
+              <item>
+               <property name="text">
+                <string>Unassigned</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-1000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Diode</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Sense Resistor</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type J Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type K Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type E Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type N Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type R Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type S Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type T Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type B Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Custom Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-10</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-50</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-100</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-200</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-500</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD 1000 (0.00375)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD NI-120</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD Custom</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44004/44033 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44005/44030 3k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44007/44034 5k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44006/44031 10k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44008/44032 30k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor YSI 400 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Spectrum 1003k 1k</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Steinhart-Hart</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Table</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Direct ADC</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Analog Temperature Sensor</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="9" column="10">
+             <widget class="QLineEdit" name="CH10_val">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="3">
+             <widget class="QComboBox" name="mode_sel_CH3">
+              <item>
+               <property name="text">
+                <string>Unassigned</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-1000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Diode</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Sense Resistor</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type J Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type K Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type E Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type N Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type R Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type S Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type T Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type B Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Custom Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-10</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-50</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-100</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-200</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-500</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD 1000 (0.00375)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD NI-120</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD Custom</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44004/44033 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44005/44030 3k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44007/44034 5k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44006/44031 10k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44008/44032 30k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor YSI 400 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Spectrum 1003k 1k</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Steinhart-Hart</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Table</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Direct ADC</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Analog Temperature Sensor</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="4" column="2" alignment="Qt::AlignHCenter">
+             <widget class="QCheckBox" name="datalogger_CH5_enabled">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="2" alignment="Qt::AlignHCenter">
+             <widget class="QCheckBox" name="datalogger_CH7_enabled">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QComboBox" name="mode_sel_CH1">
+              <item>
+               <property name="text">
+                <string>Unassigned</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-1000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Diode</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Sense Resistor</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type J Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type K Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type E Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type N Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type R Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type S Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type T Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type B Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Custom Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-10</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-50</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-100</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-200</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-500</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD 1000 (0.00375)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD NI-120</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD Custom</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44004/44033 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44005/44030 3k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44007/44034 5k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44006/44031 10k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44008/44032 30k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor YSI 400 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Spectrum 1003k 1k</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Steinhart-Hart</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Table</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Direct ADC</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Analog Temperature Sensor</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="5" column="2" alignment="Qt::AlignHCenter">
+             <widget class="QCheckBox" name="datalogger_CH6_enabled">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="3">
+             <widget class="QComboBox" name="mode_sel_CH7">
+              <item>
+               <property name="text">
+                <string>Unassigned</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-1000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Diode</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Sense Resistor</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type J Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type K Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type E Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type N Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type R Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type S Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type T Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type B Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Custom Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-10</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-50</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-100</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-200</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-500</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD 1000 (0.00375)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD NI-120</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD Custom</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44004/44033 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44005/44030 3k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44007/44034 5k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44006/44031 10k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44008/44032 30k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor YSI 400 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Spectrum 1003k 1k</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Steinhart-Hart</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Table</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Direct ADC</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Analog Temperature Sensor</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="7" column="2" alignment="Qt::AlignHCenter">
+             <widget class="QCheckBox" name="datalogger_CH8_enabled">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="3">
+             <widget class="QComboBox" name="mode_sel_CH8">
+              <item>
+               <property name="text">
+                <string>Unassigned</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-1000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Diode</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Sense Resistor</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type J Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type K Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type E Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type N Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type R Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type S Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type T Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type B Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Custom Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-10</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-50</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-100</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-200</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-500</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD 1000 (0.00375)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD NI-120</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD Custom</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44004/44033 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44005/44030 3k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44007/44034 5k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44006/44031 10k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44008/44032 30k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor YSI 400 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Spectrum 1003k 1k</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Steinhart-Hart</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Table</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Direct ADC</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Analog Temperature Sensor</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="8" column="2" alignment="Qt::AlignHCenter">
+             <widget class="QCheckBox" name="datalogger_CH9_enabled">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2" alignment="Qt::AlignHCenter">
+             <widget class="QCheckBox" name="datalogger_CH3_enabled">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="3">
+             <widget class="QComboBox" name="mode_sel_CH4">
+              <item>
+               <property name="text">
+                <string>Unassigned</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-1000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Diode</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Sense Resistor</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type J Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type K Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type E Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type N Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type R Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type S Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type T Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type B Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Custom Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-10</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-50</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-100</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-200</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-500</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD 1000 (0.00375)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD NI-120</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD Custom</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44004/44033 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44005/44030 3k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44007/44034 5k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44006/44031 10k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44008/44032 30k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor YSI 400 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Spectrum 1003k 1k</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Steinhart-Hart</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Table</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Direct ADC</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Analog Temperature Sensor</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="2" alignment="Qt::AlignHCenter">
+             <widget class="QCheckBox" name="datalogger_CH4_enabled">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="3">
+             <widget class="QComboBox" name="mode_sel_CH6">
+              <item>
+               <property name="text">
+                <string>Unassigned</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-1000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Diode</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Sense Resistor</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type J Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type K Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type E Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type N Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type R Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type S Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type T Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type B Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Custom Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-10</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-50</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-100</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-200</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-500</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD 1000 (0.00375)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD NI-120</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD Custom</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44004/44033 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44005/44030 3k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44007/44034 5k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44006/44031 10k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44008/44032 30k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor YSI 400 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Spectrum 1003k 1k</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Steinhart-Hart</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Table</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Direct ADC</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Analog Temperature Sensor</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="9" column="2" alignment="Qt::AlignHCenter">
+             <widget class="QCheckBox" name="datalogger_CH10_enabled">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="3">
+             <widget class="QComboBox" name="mode_sel_CH5">
+              <item>
+               <property name="text">
+                <string>Unassigned</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-1000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Diode</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Sense Resistor</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type J Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type K Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type E Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type N Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type R Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type S Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type T Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type B Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Custom Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-10</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-50</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-100</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-200</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-500</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD 1000 (0.00375)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD NI-120</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD Custom</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44004/44033 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44005/44030 3k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44007/44034 5k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44006/44031 10k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44008/44032 30k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor YSI 400 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Spectrum 1003k 1k</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Steinhart-Hart</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Table</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Direct ADC</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Analog Temperature Sensor</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="0" column="11">
+             <widget class="QLineEdit" name="CH1_status">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="10">
+             <widget class="QLineEdit" name="CH8_val">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="10">
+             <widget class="QLineEdit" name="CH9_val">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="12">
+             <spacer name="horizontalSpacer_38">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="1" alignment="Qt::AlignHCenter">
+             <widget class="QLabel" name="label_28">
+              <property name="text">
+               <string>CH3</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1" alignment="Qt::AlignHCenter">
+             <widget class="QLabel" name="label_30">
+              <property name="text">
+               <string>CH5</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1" alignment="Qt::AlignHCenter">
+             <widget class="QLabel" name="label_29">
+              <property name="text">
+               <string>CH4</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="3">
+             <widget class="QComboBox" name="mode_sel_CH10">
+              <item>
+               <property name="text">
+                <string>Unassigned</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-1000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Diode</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Sense Resistor</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type J Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type K Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type E Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type N Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type R Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type S Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type T Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type B Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Custom Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-10</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-50</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-100</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-200</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-500</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD 1000 (0.00375)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD NI-120</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD Custom</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44004/44033 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44005/44030 3k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44007/44034 5k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44006/44031 10k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44008/44032 30k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor YSI 400 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Spectrum 1003k 1k</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Steinhart-Hart</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Table</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Direct ADC</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Analog Temperature Sensor</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="8" column="3">
+             <widget class="QComboBox" name="mode_sel_CH9">
+              <item>
+               <property name="text">
+                <string>Unassigned</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-1000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Diode</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Sense Resistor</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type J Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type K Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type E Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type N Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type R Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type S Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type T Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Type B Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Custom Thermocouple</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-10</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-50</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-100</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-200</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD PT-500</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD 1000 (0.00375)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD NI-120</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RTD Custom</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44004/44033 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44005/44030 3k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44007/44034 5k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44006/44031 10k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor 44008/44032 30k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor YSI 400 2.252k at 25 C</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Spectrum 1003k 1k</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Steinhart-Hart</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Thermistor Custom Table</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Direct ADC</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Analog Temperature Sensor</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="10">
+             <widget class="QLineEdit" name="CH3_val">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="10">
+             <widget class="QLineEdit" name="CH2_val">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="9">
+             <spacer name="horizontalSpacer_27">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="4" column="9">
+             <spacer name="horizontalSpacer_29">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="5" column="9">
+             <spacer name="horizontalSpacer_30">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="6" column="9">
+             <spacer name="horizontalSpacer_31">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="7" column="9">
+             <spacer name="horizontalSpacer_32">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="7" column="1" alignment="Qt::AlignHCenter">
+             <widget class="QLabel" name="label_33">
+              <property name="text">
+               <string>CH8</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2" alignment="Qt::AlignHCenter">
+             <widget class="QCheckBox" name="datalogger_CH1_enabled">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" alignment="Qt::AlignHCenter">
+             <widget class="QLabel" name="label_27">
+              <property name="text">
+               <string>CH2</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1" alignment="Qt::AlignHCenter">
+             <widget class="QLabel" name="label_32">
+              <property name="text">
+               <string>CH7</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="1" alignment="Qt::AlignHCenter">
+             <widget class="QLabel" name="label_34">
+              <property name="text">
+               <string>CH9</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="1" alignment="Qt::AlignHCenter">
+             <widget class="QLabel" name="label_35">
+              <property name="text">
+               <string>CH10</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2" alignment="Qt::AlignHCenter">
+             <widget class="QCheckBox" name="datalogger_CH2_enabled">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1" alignment="Qt::AlignHCenter">
+             <widget class="QLabel" name="label_31">
+              <property name="text">
+               <string>CH6</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="10">
+             <widget class="QLineEdit" name="CH5_val">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="10">
+             <widget class="QLineEdit" name="CH6_val">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="11">
+             <widget class="QLineEdit" name="CH7_status">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="11">
+             <widget class="QLineEdit" name="CH5_status">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="11">
+             <widget class="QLineEdit" name="CH6_status">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="11">
+             <widget class="QLineEdit" name="CH8_status">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="11">
+             <widget class="QLineEdit" name="CH9_status">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="11">
+             <widget class="QLineEdit" name="CH10_status">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1" alignment="Qt::AlignHCenter">
+             <widget class="QLabel" name="label_26">
+              <property name="text">
+               <string>CH1</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <layout class="QHBoxLayout" name="CH1_settings_layout_1"/>
+            </item>
+            <item row="0" column="7">
+             <layout class="QHBoxLayout" name="CH1_settings_layout_4"/>
+            </item>
+            <item row="0" column="6">
+             <layout class="QHBoxLayout" name="CH1_settings_layout_3"/>
+            </item>
+            <item row="0" column="5">
+             <layout class="QHBoxLayout" name="CH1_settings_layout_2"/>
+            </item>
+            <item row="8" column="9">
+             <spacer name="horizontalSpacer_33">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="9" column="9">
+             <spacer name="horizontalSpacer_34">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="4">
+             <layout class="QHBoxLayout" name="CH2_settings_layout_1"/>
+            </item>
+            <item row="3" column="10">
+             <widget class="QLineEdit" name="CH4_val">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="11">
+             <widget class="QLineEdit" name="CH2_status">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="9">
+             <spacer name="horizontalSpacer_14">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="8">
+             <layout class="QHBoxLayout" name="CH1_settings_layout_5"/>
+            </item>
+            <item row="1" column="9">
+             <spacer name="horizontalSpacer_19">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="10">
+             <widget class="QLineEdit" name="CH1_val">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="7">
+             <layout class="QHBoxLayout" name="CH2_settings_layout_4"/>
+            </item>
+            <item row="1" column="6">
+             <layout class="QHBoxLayout" name="CH2_settings_layout_3"/>
+            </item>
+            <item row="1" column="5">
+             <layout class="QHBoxLayout" name="CH2_settings_layout_2"/>
+            </item>
+            <item row="1" column="8">
+             <layout class="QHBoxLayout" name="CH2_settings_layout_5"/>
+            </item>
+            <item row="2" column="4">
+             <layout class="QHBoxLayout" name="CH3_settings_layout_1"/>
+            </item>
+            <item row="2" column="5">
+             <layout class="QHBoxLayout" name="CH3_settings_layout_2"/>
+            </item>
+            <item row="2" column="6">
+             <layout class="QHBoxLayout" name="CH3_settings_layout_3"/>
+            </item>
+            <item row="2" column="7">
+             <layout class="QHBoxLayout" name="CH3_settings_layout_4"/>
+            </item>
+            <item row="2" column="8">
+             <layout class="QHBoxLayout" name="CH3_settings_layout_5"/>
+            </item>
+            <item row="3" column="4">
+             <layout class="QHBoxLayout" name="CH4_settings_layout_1"/>
+            </item>
+            <item row="3" column="5">
+             <layout class="QHBoxLayout" name="CH4_settings_layout_2"/>
+            </item>
+            <item row="3" column="6">
+             <layout class="QHBoxLayout" name="CH4_settings_layout_3"/>
+            </item>
+            <item row="3" column="7">
+             <layout class="QHBoxLayout" name="CH4_settings_layout_4"/>
+            </item>
+            <item row="3" column="8">
+             <layout class="QHBoxLayout" name="CH4_settings_layout_5"/>
+            </item>
+            <item row="4" column="4">
+             <layout class="QHBoxLayout" name="CH5_settings_layout_1"/>
+            </item>
+            <item row="4" column="5">
+             <layout class="QHBoxLayout" name="CH5_settings_layout_2"/>
+            </item>
+            <item row="4" column="6">
+             <layout class="QHBoxLayout" name="CH5_settings_layout_3"/>
+            </item>
+            <item row="4" column="7">
+             <layout class="QHBoxLayout" name="CH5_settings_layout_4"/>
+            </item>
+            <item row="4" column="8">
+             <layout class="QHBoxLayout" name="CH5_settings_layout_5"/>
+            </item>
+            <item row="5" column="4">
+             <layout class="QHBoxLayout" name="CH6_settings_layout_1"/>
+            </item>
+            <item row="5" column="5">
+             <layout class="QHBoxLayout" name="CH6_settings_layout_2"/>
+            </item>
+            <item row="5" column="6">
+             <layout class="QHBoxLayout" name="CH6_settings_layout_3"/>
+            </item>
+            <item row="5" column="7">
+             <layout class="QHBoxLayout" name="CH6_settings_layout_4"/>
+            </item>
+            <item row="5" column="8">
+             <layout class="QHBoxLayout" name="CH6_settings_layout_5"/>
+            </item>
+            <item row="6" column="4">
+             <layout class="QHBoxLayout" name="CH7_settings_layout_1"/>
+            </item>
+            <item row="6" column="5">
+             <layout class="QHBoxLayout" name="CH7_settings_layout_2"/>
+            </item>
+            <item row="6" column="6">
+             <layout class="QHBoxLayout" name="CH7_settings_layout_3"/>
+            </item>
+            <item row="6" column="7">
+             <layout class="QHBoxLayout" name="CH7_settings_layout_4"/>
+            </item>
+            <item row="6" column="8">
+             <layout class="QHBoxLayout" name="CH7_settings_layout_5"/>
+            </item>
+            <item row="7" column="4">
+             <layout class="QHBoxLayout" name="CH8_settings_layout_1"/>
+            </item>
+            <item row="7" column="5">
+             <layout class="QHBoxLayout" name="CH8_settings_layout_2"/>
+            </item>
+            <item row="7" column="6">
+             <layout class="QHBoxLayout" name="CH8_settings_layout_3"/>
+            </item>
+            <item row="7" column="7">
+             <layout class="QHBoxLayout" name="CH8_settings_layout_4"/>
+            </item>
+            <item row="7" column="8">
+             <layout class="QHBoxLayout" name="CH8_settings_layout_5"/>
+            </item>
+            <item row="8" column="4">
+             <layout class="QHBoxLayout" name="CH9_settings_layout_1"/>
+            </item>
+            <item row="8" column="5">
+             <layout class="QHBoxLayout" name="CH9_settings_layout_2"/>
+            </item>
+            <item row="8" column="6">
+             <layout class="QHBoxLayout" name="CH9_settings_layout_3"/>
+            </item>
+            <item row="8" column="7">
+             <layout class="QHBoxLayout" name="CH9_settings_layout_4"/>
+            </item>
+            <item row="8" column="8">
+             <layout class="QHBoxLayout" name="CH9_settings_layout_5"/>
+            </item>
+            <item row="9" column="4">
+             <layout class="QHBoxLayout" name="CH10_settings_layout_1"/>
+            </item>
+            <item row="9" column="5">
+             <layout class="QHBoxLayout" name="CH10_settings_layout_2"/>
+            </item>
+            <item row="9" column="6">
+             <layout class="QHBoxLayout" name="CH10_settings_layout_3"/>
+            </item>
+            <item row="9" column="7">
+             <layout class="QHBoxLayout" name="CH10_settings_layout_4"/>
+            </item>
+            <item row="9" column="8">
+             <layout class="QHBoxLayout" name="CH10_settings_layout_5"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTextBrowser" name="dataloggerTextResponse"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1191</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MplWidget</class>
+   <extends>QWidget</extends>
+   <header>MplWidget</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
